@@ -1,5 +1,24 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+}
+
+.Toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ToolbarItem {
+  display: block;
+  padding: 10px;
+}
+
+.ProjectList {
+  border: 1px dashed red;
 }
 
 .App-logo {

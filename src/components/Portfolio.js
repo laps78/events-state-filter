@@ -1,11 +1,20 @@
 import Toolbar from './Toolbar';
 import ProjectList from './ProjectList';
+// import { useState } from 'react';
 
-export default function Portfolio() {
+function Portfolio() {
+  // const initialState = null;
+  // const [filters, selected, projects] = useState(initialState);
+
   return (
-    <div>
-      <Toolbar />
+    <div className="Portfolio">
+      <Toolbar
+        filters={["All", "Websites", "Flayers", "Business Cards"]}
+        selected="All"
+      />
       <ProjectList />
     </div>
   );
 }
+
+export default Portfolio;

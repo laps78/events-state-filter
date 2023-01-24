@@ -1,6 +1,14 @@
-export default function Toolbar() {
-  return (<Toolbar
-    filters={["All", "Websites", "Flayers", "Business Cards"]}
-    selected="All"
-    onSelectFilter={(filter) => { console.log(filter); }} />);
+import ToolbarItem from "./ToolbarItem";
+
+function Toolbar(props) {
+  return (
+    <div className="Toolbar">
+      {props.filters.forEach((filter) => {
+        <ToolbarItem name={filter} />;
+        })
+      }
+    </div>
+  );
 }
+
+export default Toolbar;
