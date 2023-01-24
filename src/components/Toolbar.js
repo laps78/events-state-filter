@@ -3,10 +3,9 @@ import ToolbarItem from "./ToolbarItem";
 function Toolbar(props) {
   return (
     <div className="Toolbar">
-      {props.filters.forEach((filter) => {
-        <ToolbarItem name={filter} />;
-        })
-      }
+      {props.filters.map(filter => {
+        return (<ToolbarItem filterName={filter} />)
+      })}
     </div>
   );
 }

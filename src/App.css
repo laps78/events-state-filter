@@ -15,9 +15,21 @@
 .ToolbarItem {
   display: block;
   padding: 10px;
+  border-radius: 3px;
+  border: 3px solid #555555;
+}
+
+.ToolbarItem:hover {
+  cursor: pointer;
+}
+
+.selected {
+  color: #ffffff;
+  background-color: #555555;
 }
 
 .ProjectList {
+  margin-top: 1rem;
   border: 1px dashed red;
 }
 
