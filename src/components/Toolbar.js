@@ -8,6 +8,7 @@ function Toolbar(props) {
           <ToolbarItem
             key={filter.toString()}
             name={filter}
+            selected={props.selected}
           />)
       })}
     </div>

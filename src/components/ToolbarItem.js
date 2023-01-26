@@ -9,7 +9,7 @@ function ToolbarItem(props) {
     evt.target.classList.add('selected');
   };
   return (
-    <div className="ToolbarItem" onClick={handleClick}>
+    <div className={(props.name === props.selected) ? "ToolbarItem selected" : "ToolbarItem" } onClick={handleClick}>
       { props.name }
     </div>
   );                                                                        
