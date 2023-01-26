@@ -4,6 +4,10 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 1rem;
+}
+.Portfolio {
+  margin: 0;
 }
 
 .Toolbar {
@@ -35,7 +39,18 @@
 
 .ProjectList {
   margin-top: 1rem;
-  border: 1px dashed red;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.Project {
+  width: calc(30% - 8px);
+  padding: 6px;
+}
+
+.project__img {
+  width: 100%;
 }
 
 .App-logo {

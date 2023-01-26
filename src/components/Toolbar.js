@@ -9,6 +9,7 @@ function Toolbar(props) {
             key={filter.toString()}
             name={filter}
             selected={props.selected}
+            eventHandler={props.eventHandler}
           />)
       })}
     </div>

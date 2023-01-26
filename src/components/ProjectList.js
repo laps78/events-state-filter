@@ -1,9 +1,17 @@
-function ProjectList(projects) {
+import Project from "./project";
+
+function ProjectList(props) {
   return (
     <div className="ProjectList">
-      <p>...</p>
-      <p>projectlist should be here after all manipulations</p>
-      <p>...</p>
+      {
+        Array.from(props.projects).map((project, projectIndex) => 
+          <Project
+            key={projectIndex}
+            img={project.img}
+            name={props.category}
+          />
+        )
+      }
     </div>
   );
 }
