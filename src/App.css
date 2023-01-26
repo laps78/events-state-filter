@@ -7,9 +7,9 @@
 }
 
 .Toolbar {
+  width: 90vw;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .ToolbarItem {
@@ -17,6 +17,10 @@
   padding: 10px;
   border-radius: 3px;
   border: 3px solid #555555;
+}
+
+.ToolbarItem:nth-child(n + 2) {
+  margin-left: 5px;
 }
 
 .ToolbarItem:hover {

@@ -10,7 +10,7 @@ function ToolbarItem(props) {
   };
   return (
     <div className="ToolbarItem" onClick={handleClick}>
-      { props.filterName }
+      { props.name }
     </div>
   );                                                                        
 }
